@@ -1,12 +1,11 @@
 name: CI-CD Cafeteria
-
 on:
  push:
  branches: [main]
  workflow_dispatch:
- permissions:
+permissions:
  contents: read
- jobs:
+jobs:
  validar:
  name: CI - Validar programa
  runs-on: ubuntu-latest
